@@ -1,0 +1,631 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Poppins', sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+  background: #292727;
+  color: #9c9a9a;
+
+}
+
+
+  .html{ scroll-behavior: smooth;
+
+
+  }
+
+
+
+  header{
+  position: fixed;
+
+  display: flex;
+  justify-content:space-between;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: 0.6s;
+  align-items: center;  
+  padding: 30px 100px;
+  
+   z-index: 100000;
+ }
+
+ 
+header ul{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+
+ }
+
+header ul li{
+position: relative;
+list-style: none;
+
+margin-inline-end: 55px;
+display:inline;
+
+
+ }
+
+
+ header ul li a{
+    color: cadetblue;
+    text-decoration: none;
+    font-size: 20px;
+    position:relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0 16px;
+    transition: 0.6s;
+    letter-spacing: 2px;
+    font-weight: 500;
+    
+}
+.sticky{
+  padding: 5px  100px;
+  background: #1c3c46;
+}
+
+.sticky ul li a{
+
+  color: #fdfafa;
+}
+
+.logo{
+  position: relative;
+  width:100px;
+  height:50px;
+  border: 1px solid rgb(23, 23, 26);
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+
+}
+  
+
+header li a::after{
+  content: '';
+  width:0%;
+  height:3px;
+  background-color :#9c9195;
+  position:absolute;
+  left:0;
+  bottom: -6px;
+  transition: 0.6s;
+
+}
+
+
+
+header ul li a:hover::after{
+  width: 100%;
+}
+
+#home{
+
+  margin-top: 200px;
+ 
+
+}
+
+
+
+
+.meio{
+ 
+
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.meio h3 p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+span{
+  color:#c46986;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+/*--------------------------About Me----------------------------*/
+
+#about{
+    padding: 0px 0px;
+    margin-top: 50px;
+  color:#ababab
+}
+
+.row1{
+display:flex; 
+  
+}
+
+.sub-title p{
+
+  background: #dd6161;
+  padding: 3px;
+  border-radius: 5px;
+
+}
+
+.about-col-1 {
+flex-basis: 35%;
+
+}
+.about-col-1 img{
+  border-radius: 15px;
+  width:370px;
+  height:600px
+
+}
+
+.about-col-2{
+  margin-left: 50px;
+}
+
+
+.sub-title1 {
+  background: #242121;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+
+}
+
+.sub-title1 span{
+  color: #925f6f;
+  margin-top: 500px;
+}
+
+
+
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color:#fff;
+}
+
+
+.tab-title{
+  display: flex;
+  margin: 15px 0 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:cadetblue ;
+}
+
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+  content: "";
+  width:0;
+  height:3px;
+  background: #ff004f;
+  position:absolute;
+  left:0;
+  bottom: -8px;
+  transition: 0.3s;
+
+}
+
+.tab-links.active-link::after{
+  width: 40%;
+}
+
+.tab-contents li{
+  list-style: none ;
+  margin:10px 0;
+  
+
+}
+
+.tab-contents li span{
+
+  color: #e96173;
+  font-size: 16px;
+
+
+}
+.tab-contents li{
+   color: #bdbcc2;
+   padding: 0 0 px;
+   margin-top: 0px ;
+   font-size: 14px;
+  
+}
+
+.tab-contents{
+  display: none
+}
+
+
+
+.tab-contents.active-tab{
+display:block;
+
+}
+
+
+
+/*---------------------------------project-------------------------*/
+
+#portifolio{
+  padding: 40px 0;
+
+}
+.sub-title{
+  padding: 10px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: cadetblue;
+  font-weight: 300;
+}
+
+
+.project-list{
+display:grid;
+grid-gap: 60px;
+margin-top:30px;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+}
+
+.work{
+ position: relative;
+ border-radius: 10px;
+ overflow: hidden;
+   
+
+}
+
+.work img{
+  width: 100%;
+  height:100% ;
+ border-radius: 10px;
+ transition: transform 0.5s;
+
+}
+
+
+
+.layer h3{
+
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+
+.work:hover img{
+      transform: scale(1.1);
+
+}
+.work:hover .layer{
+height: 100%;
+
+}
+
+.btn{
+
+  display: block;
+  margin: 20px  auto;
+  width: fit-content;
+  border: 1px solid #161516; 
+  padding: 10px  50px;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.5s;
+}
+
+
+
+.btn:hover{
+  background: #ff004f;
+  border: 1px solid  #ff004f;
+
+}
+
+.sub-title1{
+    margin-right: 50px;
+
+}
+
+
+
+/*-----------------------------------Contact---------------------------------------------*/
+
+.contact-left{
+  
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+  margin-left: 85px;
+ 
+}
+
+
+.contact-right input {
+  background-color: #a19c9c;
+
+}
+
+.contact-right textarea{
+  background-color:#a19c9c;
+}
+
+.contact-left p{
+margin-top: 20px;
+}
+
+
+.contact-left p i{
+  color: #1c3c46;
+  margin-left: 10px;
+  font-size: 25px ;
+ 
+}
+.social-icons {
+   margin-top: 20px;
+   margin-left: 90px;
+  
+
+}
+
+.nunber {
+  margin-left: 80px;
+}
+
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+margin-left: 5px;
+}
+
+.social-icons a:hover{
+  color:#1c3c46;
+  transform: translateY(-5px);
+
+}
+
+.row1{
+  margin: 0 0px;
+  
+}
+.btn.btn2{
+display: inline-block;
+background: #1c3c46;
+padding: 9px 50px;
+}
+
+
+
+.contact-right form{
+ width: 100%;
+} 
+
+
+form input, form textarea{
+
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 12px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+
+}
+form .btn2{
+  padding: 9px 60px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.copyright{
+ width: 100%;
+ text-align: center;
+ padding: 25px 0;
+ background: #312d2f;
+ margin-top: 20px;
+ font-weight: 200;
+}
+
+
+#msg{
+  color:#61b752;
+  margin-top: -20px;
+  display: block;
+
+}
+
+
+ footer{
+ background-color: #181b18;
+ width: 100%;
+ 
+}
+
+
+.footerContainer{
+  width: 100%;
+ 
+}
+
+
+.footerContainer p{
+  display: flex;
+   justify-content: center;
+   color: #e6d7db;
+   font-size: 12px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   width: 100%;
+   margin-top: 50px;
+   margin-bottom: 0px;
+   font-weight: 50;
+   padding-top: 5px;
+}
+
+
+
+
+
+/*------------css for Small screens---------------*/
+  
+ header .fa-solid {
+ display: none;
+ 
+}
+
+
+@media only screen and (max-width:600px) {
+ 
+
+  .meio h3 p{
+    margin-top: 100%;
+    font-size: 10px;
+  }
+
+
+   header .fa-solid{
+    display:block;
+    left: 0;
+    right:0;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 15px;
+   
+   }
+
+   .fa-solid{
+    margin-top: 2px;
+   }
+ 
+   header {
+    padding: 10px 15px;
+   
+    position: fixed;
+    justify-content:space-between;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: 0.6s;
+    align-items: center;  
+    z-index: 100000;
+
+   }
+
+
+   .sticky{
+    padding: 0px  10px;
+   display: none
+    
+  }
+  
+
+  header  ul{
+
+    display: block;
+    justify-content: space-between;
+    background:#394346;
+    position: fixed;
+    top:0;
+    right:  -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top:50px;
+    z-index: 2;
+   
+    transition: right 0.7s;
+   }
+
+   header ul li{
+    display: block;
+    margin: 1px;
+   }
+   header ul .fa-solid{
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    cursor: pointer;
+   }
+
+
+   
+.row1{
+  display:block; 
+    
+  }
+
+  .meio{
+    margin-left: 65px;
+  } 
+
+
+#home{
+  margin-top: 150px;
+}
+
+#home .meio h3 p{
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.contact-right{
+  margin-left: 0px;
+}
+
+.contact-left P a{
+margin-left: 50px;
+}
+
+.logo{
+  height: 40px;
+  width:65px
+}
+
+}
+
+
+
+
+aside {
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #676867;
+    width: 300px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    transform: translateX(300px);
+    transition: transform 0.7s;
+}

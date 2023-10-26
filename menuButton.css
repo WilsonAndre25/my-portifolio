@@ -1,0 +1,112 @@
+#menuButton {
+    width: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#menuButton > span {
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: white;
+}
+
+#menuButton > span ~ span {
+    margin-top: 10px;
+}
+
+#menuButton.cross > span:nth-child(1) {
+    animation: first-bar-swtich-to-cross 1s ease forwards;
+}
+
+#menuButton.burger > span:nth-child(1) {
+    animation: first-bar-swtich-to-burger 1s ease forwards;
+}
+
+@keyframes first-bar-swtich-to-cross {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(10px) rotate(45deg);
+    }
+}
+
+@keyframes first-bar-swtich-to-burger {
+    0% {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+#menuButton.cross > span:nth-child(2) {
+    animation: second-bar-swtich-to-cross 1s ease forwards;
+}
+
+#menuButton.burger > span:nth-child(2) {
+    animation: second-bar-swtich-to-burger 1s ease forwards;
+}
+
+@keyframes second-bar-swtich-to-cross {
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes second-bar-swtich-to-burger {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#menuButton.cross > span:nth-child(3) {
+    animation: third-bar-swtich-to-cross 1s ease forwards;
+}
+
+#menuButton.burger > span:nth-child(3) {
+    animation: third-bar-swtich-to-burger 1s ease forwards;
+}
+
+@keyframes third-bar-swtich-to-cross {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-10px) rotate(135deg);
+    }
+}
+
+@keyframes third-bar-swtich-to-burger {
+    0% {
+        transform: translateY(-10px) rotate(135deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+

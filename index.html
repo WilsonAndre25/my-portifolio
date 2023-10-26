@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/eaa065ebfb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./portfolio.css" />
+
+  <title>portifolio</title>
+
+</head>
+
+<body>
+
+    <header>
+      
+         <img src="images/image.png" class="logo">
+         <ul id="sidemenu">
+         <li><a href="#">Home</a></li>
+         <li><a href="#about">About Me</a></li>
+         <li><a href="#portifolio">Project</a></li>
+         <li><a href="#contact">Contact</a></li>
+
+       
+         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+         </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+       </header>
+
+       <div id="home">
+       <div  class="container">
+
+       <div class="meio ">
+            <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Hi, I'm <span>Wilson</span> Andre</h3>
+            <p  style="font-family: Georgia, 'Times New Roman', Times, serif;">Full-Stack Web-Developer</p>
+          </div>       
+     </div>
+     </div>
+ 
+   
+    <!-----------About Me----------->
+    <div id="about">
+      <div class="container">
+        <div class="row1">
+
+          <div class=" about-col-1 ">
+            <img src="images/foto5.JPG" class="perfil">
+
+          </div>
+
+          <div class=" about-col-2 ">
+             
+            <h1 class="sub-title">About Me</h1>
+            <div class="sub-title1" >
+            <p> After a few years working as a trainee in <span>engineering project management</span> in an environmental management company, I decided to bet on my passion as a programmer and graduate in <span> Full-Stack Web Developer</span> based in Germany and Italy that had always been
+                passionante about <span> technology</span> and averything that revolves around it.
+                in Octuber I have successfully   completed the<span>  Epicode's Junior web  bootcamp</span>.that is a intensive.
+                8-months training   curse composed of over  more then 1000 hours of live-coding lessons,daily
+                <span> exercise</span> and team's <span> Projects</span>.
+                As a Jr.Full-Stack I really enjoy both side<span> backend end frontend</span>, and i intend to continue forming
+                me by deepening the technologies I already know and studying new ones.
+              .</p>
+             </div>
+            <div class="tab-title">
+              
+              <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+              <p class="tab-links" onclick="opentab('Education')"> Education</p>
+      
+            </div>
+
+            <div class="tab-contents active-tab" id="Skills">
+                    
+              <li><span>Frontend</span><br>HTML / CSS5 / React.js</li>
+              <li><span>Frontend</span><br>JavaScript / TypeScript</li>
+              <li><span>Backend</span><br>MongoDB / JWT / NodeJS</li>
+              <li><span>Backend</span><br>Express / NoSQL</li>
+              <li><span>Tools</span><br>Ms Project / Trello</li>
+             
+            </div>
+            
+           
+          
+            <div class="tab-contents" id="Education">
+
+              <li><span> Epicode</span><br> Full-Stack Web-Developer / 2023</li>
+              <li><span> Minho University</span><br>Master. Project Management Eng. / 2020</li>
+              <li><span> Metodisty University</span><br>Mechatronic Enginner / 2016</li>
+              <li><span> London Institute</span><br> English-B2</li>
+
+            </div>
+
+            <div class="tab-contents" id="Experience">
+
+              <li><span></span><br>Project Management traineer</li>
+              <li><span> 2020</span><br> Full-Stack Web-Developer interfaces</li>
+              <li><span> web</span><br> Full-Stack Web-Develoaces</li>
+              <li><span> web</span><br> Full-Stack Web-Develorfaces</li>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+     </div>
+
+      <!------------------Portifolio------------------->
+
+      <div id="portifolio">
+        <div class="container">
+          <h1 class="sub-title"> My Projects</h1>
+          <div class=" project-list">
+            <div class="work">
+              <img src="images/6531050-adicionando-maquina-editavel-da-calculadora-vetor.jpg" alt="">
+              <div class="layer">
+                <h3>calculator</h3>
+                <p> Stacks : HTML / JavaScript CSS</p>
+                <a href="file:///C:/Users/Utilizador/Desktop/meu%20projeto/Calculadora/calculadora/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+
+            </div>
+            <div class="work">
+              <img src="images/Captura de ecrã 2023-10-18 012004.png" alt="">
+              <div class="layer">
+                <h3> Book List </h3>
+                <p> Stacks: React / Bootstrap</p>
+                <a href="http://localhost:3004/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+
+            </div>
+            <div class="work">
+              <img src="images/Captura de ecrã 2023-10-18 010916.png" alt="">
+              <div class="layer">
+                <h3>book application  </h3>
+                <p>Stacks : React /Bootstrap / NodeJS / Express</p>
+                <a href=" http://localhost:3005/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+
+      <!---------------Contact---------------->
+
+      <div id="contact">
+        <div class="container">
+          <div class="row1">
+            <div class="contact-left">
+              <h1 class="sub-title"> My Contacts</h1>
+                <P> <i class="fa-solid fa-paper-plane"></i> wilsonandreandre439@gmail.com</P>
+                <P> <i class="fa-solid fa-square-phone"></i>+351938058374</P>
+                <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-discord"></i></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/wilson-andre-265889116/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/WilsonAndre25"><i class="fa-brands fa-github"></i></a>
+
+              </div>
+              <div class=" nunber">
+              <a href="images/CV1.pdf" download class="btn btn2">Download cv</a>
+              <a href="https://csb39af7c2f2658x433dxa4d.blob.core.windows.net/credentials/650b006018bc7af66ab42e42.svg"  class="btn btn2">Certificate fs</a>
+             </div>
+
+             </div>  
+
+             <div class="contact-right">
+              <form name=" submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                <input type="submit" class="btn btn2" value="Submit" id="submit">
+              </form>
+               <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        
+      
+      <footer >
+
+      <div class="footerContainer ">
+        
+
+
+               
+
+
+          <p> &copy; 2023 Wilson André. All Rights Reserved.  </p>
+
+       </div>  
+       </footer>
+                 
+
+
+       <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove('active-link')
+          }
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove('active-tab');
+          }
+          event.currentTarget.classList.add('active-link')
+          document.getElementById(tabname).classList.add('active-tab')
+        }
+
+        const scriptURL="https://script.google.com/macros/s/AKfycbyHZ6SIdhg3RdC1GIMYiKYiCVzCoHjQXT3nENJdzIvM_znh1gTny6mwVK-U5ao7-5GhTA/exec"
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener("submit",e => {
+          fetch(scriptURL,{ method: 'POST', body: new FormData (form)})
+          .then(response => {
+         msg.innerHTML ='Message  sent Successfully'
+         setTimeout(function(){
+      msg.innerHTML =""
+   },5000)
+
+          })
+          .catch(error =>console.error('Error',error.message))
+        })
+
+
+       </script>
+
+       <script  type ="text/javascript">
+       window.addEventListener("scroll", function(){
+        var header = document.querySelector("header")
+        header.classList.toggle("sticky",window.scrollY > 0);
+      })
+
+
+       var sidemenu = document.getElementById("sidemenu");
+       function openmenu(){
+        sidemenu.style.right="0";
+
+       }
+            function closemenu(){
+        sidemenu.style.right="-200px";
+        
+       }
+      </script>
+  
+
+
+</body>
+
+</html>
