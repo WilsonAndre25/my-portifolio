@@ -160,20 +160,22 @@ display:flex;
  
 }
 
-.about-col-1:hover img{
- transform: scale(1.1);
-  cursor: pointer;
-  transition:  transform 0.6s;
-
-
-}
 
 .about-col-1 img{
   border-radius: 15px;
   width:370px;
-  height:600px
+  height:600px;
+  transition: transform 0.6s;
+}
+
+.about-col-1:hover img{
+ transform: scale(1.1);
+  cursor: pointer;
+
+
 
 }
+
 
 .about-col-2{
   margin-left: 50px;
